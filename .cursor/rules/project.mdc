@@ -1,0 +1,262 @@
+---
+description: Core engineering rules for the personal portfolio project
+alwaysApply: true
+---
+
+# Personal Portfolio — Project Rules
+
+## Project Identity
+
+This project is the personal portfolio website of Biozid Bhuiyan Tonoy.
+
+Professional identity:
+
+- Software Engineer
+- Target audience: recruiters, hiring managers, technical interviewers, and potential collaborators
+- Primary goal: internship and entry-level software engineering opportunities
+
+The portfolio should communicate technical ability, professionalism, problem-solving ability, and real software engineering experience.
+
+---
+
+## Technology Stack
+
+Use the following technologies unless there is a clear technical reason to change them:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Git
+- GitHub
+- Vercel
+
+Do not introduce additional libraries without a clear requirement.
+
+Before adding a dependency, explain:
+
+1. Why it is needed
+2. What problem it solves
+3. Whether the existing stack can solve the problem
+4. The maintenance or complexity tradeoff
+
+---
+
+## Engineering Principles
+
+Follow these principles:
+
+1. Prefer simple solutions over unnecessary complexity.
+2. Do not over-engineer the application.
+3. Keep components small and focused.
+4. Prefer reusable components when reuse is meaningful.
+5. Avoid premature abstraction.
+6. Avoid duplicated logic.
+7. Keep business/data content separate from UI components when practical.
+8. Use meaningful names for variables, functions, components, and files.
+9. Keep TypeScript strict and avoid unnecessary `any`.
+10. Do not change unrelated code while implementing a feature.
+
+---
+
+## AI-Assisted Development Workflow
+
+Act as an engineering partner rather than blindly generating code.
+
+For non-trivial tasks:
+
+1. Inspect the existing codebase.
+2. Understand the relevant files.
+3. Identify the problem.
+4. Propose an implementation plan.
+5. Explain important architectural decisions.
+6. Implement only the requested scope.
+7. Review the implementation for bugs and maintainability.
+8. Identify potential improvements separately.
+
+Do not modify files before understanding the existing implementation.
+
+Do not rewrite working code without a clear reason.
+
+Do not make unrelated improvements during a focused task.
+
+---
+
+## React Guidelines
+
+- Use functional components.
+- Use TypeScript.
+- Prefer composition over unnecessarily complex component hierarchies.
+- Keep components focused on one responsibility.
+- Avoid excessive prop drilling.
+- Use hooks appropriately.
+- Avoid unnecessary state.
+- Keep static portfolio content separate from presentation when practical.
+
+---
+
+## Styling Guidelines
+
+The visual direction is:
+
+- Minimal
+- Professional
+- Modern
+- Clean
+- Technical
+
+Avoid:
+
+- Excessive gradients
+- Excessive animations
+- Unnecessary visual effects
+- Overly large decorative elements
+- Distracting backgrounds
+- Generic AI-generated visual patterns
+
+Prioritize:
+
+- Typography
+- Spacing
+- Visual hierarchy
+- Consistency
+- Readability
+- Responsive layouts
+
+---
+
+## Responsive Design
+
+Every UI feature must work across:
+
+- Mobile
+- Tablet
+- Desktop
+
+Do not design desktop-first and ignore smaller screens.
+
+Check layouts for common mobile issues such as:
+
+- horizontal overflow
+- unreadable text
+- oversized elements
+- broken navigation
+- inaccessible buttons
+- excessive spacing
+
+---
+
+## Accessibility
+
+Follow accessible web development practices.
+
+Prefer:
+
+- semantic HTML
+- proper heading hierarchy
+- accessible buttons and links
+- keyboard navigation
+- visible focus states
+- meaningful alt text
+- sufficient color contrast
+- accessible interactive elements
+
+Do not rely only on color to communicate information.
+
+---
+
+## Performance
+
+Keep the application lightweight.
+
+Avoid:
+
+- unnecessary dependencies
+- unnecessarily large assets
+- excessive JavaScript
+- expensive animations
+- unnecessary re-renders
+
+Optimize images and assets when appropriate.
+
+---
+
+## SEO
+
+The portfolio should eventually include:
+
+- meaningful page titles
+- meta descriptions
+- semantic HTML
+- appropriate heading hierarchy
+- descriptive URLs
+- social sharing metadata where appropriate
+
+---
+
+## Project Structure
+
+Prefer a clear and maintainable structure.
+
+Use components for reusable UI.
+
+Keep:
+
+- UI components
+- pages
+- data
+- types
+- hooks
+- utilities
+
+organized logically.
+
+Do not create folders or abstractions without a reason.
+
+---
+
+## Content
+
+The portfolio represents a real person.
+
+Do not invent:
+
+- work experience
+- education
+- achievements
+- certifications
+- technologies
+- project results
+- statistics
+- testimonials
+
+If information is missing, ask for it or use an explicit placeholder.
+
+---
+
+## Git Awareness
+
+Development is tracked through GitHub Issues and Git.
+
+Changes should be scoped to the current task.
+
+Do not modify unrelated files.
+
+When appropriate, suggest a meaningful commit message after completing a task.
+
+---
+
+## Important Rule
+
+When uncertain, prioritize:
+
+1. Correctness
+2. Simplicity
+3. Maintainability
+4. Accessibility
+5. Performance
+6. Visual polish
+
+Do not sacrifice engineering quality merely to make the UI more visually impressive.

@@ -1,9 +1,7 @@
 function QuickNotePage() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
-      <h1 className="text-3xl font-semibold tracking-tight text-zinc-900">
-        QuickNote
-      </h1>
+    <main className="page-container">
+      <h1>QuickNote</h1>
     </main>
   )
 }

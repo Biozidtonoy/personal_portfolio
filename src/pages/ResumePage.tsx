@@ -45,6 +45,8 @@ export default function ResumePage() {
             Download Resume
           </a>
 
+          <p>To access the attach link on resume please download the pdf version</p>
+
         </div>
 
         {/* Single-page resume preview */}

@@ -1,19 +1,23 @@
-import { CodeXml } from 'lucide-react'
+import HeroSection from "../components/sections/HeroSection";
+import AboutSection from "../components/sections/AboutSection";
+import SkillsSection from "../components/sections/SkillsSection";
+import EducationSection from "../components/sections/EducationSection";
+import ProjectsSection from "../components/sections/ProjectsSection";
+import ApproachSection from "../components/sections/ApproachSection";
+import ResumeSection from "../components/sections/ResumeSection";
+import ContactSection from "../components/sections/ContactSection";
 
-function HomePage() {
+export default function HomePage() {
   return (
-    <main className="page-container flex min-h-dvh flex-col justify-center">
-      <p className="mb-3 inline-flex items-center gap-2 text-sm font-medium tracking-wide text-muted-foreground uppercase">
-        <CodeXml aria-hidden="true" className="size-4" />
-        Software Engineer
-      </p>
-      <h1>Biozid Bhuiyan Tonoy</h1>
-      <p className="mt-4 max-w-prose text-muted-foreground sm:text-lg">
-        Portfolio site foundation is in place. Sections will be added in later
-        issues.
-      </p>
-    </main>
-  )
+    <>
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <EducationSection />
+      <ProjectsSection />
+      <ApproachSection />
+      <ResumeSection />
+      <ContactSection />
+    </>
+  );
 }
-
-export default HomePage

@@ -1,0 +1,355 @@
+/* =========================================
+   HOME PROJECTS SECTION
+   ========================================= */
+
+.home-projects {
+  padding-top: 55px;
+  padding-bottom: 65px;
+}
+
+.home-projects-list {
+  margin-top: 35px;
+}
+
+/* =========================================
+   PROJECT
+   ========================================= */
+
+.home-project {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 25px;
+
+  padding: 30px 0;
+
+  border-top: 1px solid #e2e2e2;
+
+  transition:
+    transform 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.home-project:last-child {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.home-project:hover {
+  transform: translateX(5px);
+  padding-left: 5px;
+}
+
+/* =========================================
+   NUMBER
+   ========================================= */
+
+.home-project-number {
+  padding-top: 3px;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #999;
+
+  letter-spacing: 0.04em;
+}
+
+/* =========================================
+   CONTENT
+   ========================================= */
+
+.home-project-content {
+  max-width: 950px;
+}
+
+.home-project-label {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  letter-spacing: 0.18em;
+
+  color: #777;
+}
+
+/* =========================================
+   TITLE
+   ========================================= */
+
+.home-project-content h3 {
+  margin: 0 0 12px;
+
+  font-size: clamp(24px, 3.8vw, 32px);
+  line-height: 1.05;
+
+  font-weight: 600;
+
+  letter-spacing: -0.04em;
+
+  color: #171717;
+
+  transition: transform 0.25s ease;
+}
+
+.home-project:hover .home-project-content h3 {
+  transform: translateX(3px);
+}
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.home-project-content p {
+  max-width: 780px;
+
+  margin: 0 0 18px;
+
+  font-size: 16px;
+  line-height: 1.55;
+
+  color: #68717b;
+}
+
+/* =========================================
+   TECHNOLOGIES
+   ========================================= */
+
+.home-project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 20px;
+}
+
+.home-project-technologies span {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 11px;
+
+  border-radius: 6px;
+
+  background: #171717;
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.home-project-technologies span:hover {
+  transform: translateY(-2px);
+  background: #2b2b2b;
+}
+
+/* =========================================
+   ACTIONS
+   ========================================= */
+
+.home-project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  gap: 22px;
+
+  padding-top: 17px;
+
+  border-top: 1px solid #e5e5e5;
+}
+
+.home-project-actions a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #171717;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.home-project-actions a:hover {
+  transform: translateX(3px);
+  opacity: 0.65;
+}
+
+/* =========================================
+   VIEW ALL PROJECTS
+   ========================================= */
+
+.home-projects-more {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 35px;
+}
+
+.home-projects-more a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  border: 1px solid #171717;
+  border-radius: 6px;
+
+  color: #171717;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.home-projects-more a:hover {
+  background: #171717;
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+   ========================================= */
+
+@media (min-width: 1200px) {
+  .home-projects {
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+
+  .home-project {
+    padding: 25px 0;
+  }
+
+  .home-project-content h3 {
+    font-size: 32px;
+  }
+
+  .home-project-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+
+  .home-project-technologies {
+    margin-bottom: 17px;
+  }
+
+  .home-project-actions {
+    padding-top: 14px;
+  }
+
+  .home-projects-more {
+    margin-top: 28px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .home-project {
+    grid-template-columns: 60px 1fr;
+    gap: 20px;
+  }
+
+  .home-project-content h3 {
+    font-size: 32px;
+  }
+
+  .home-project-content p {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+  .home-projects {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
+  .home-projects-list {
+    margin-top: 35px;
+  }
+
+  .home-project {
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    padding: 35px 0;
+  }
+
+  .home-project:hover {
+    transform: none;
+    padding-left: 0;
+  }
+
+  .home-project-number {
+    font-size: 14px;
+  }
+
+  .home-project-label {
+    margin-bottom: 12px;
+  }
+
+  .home-project-content h3 {
+    font-size: 32px;
+  }
+
+  .home-project-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .home-project-technologies {
+    gap: 7px;
+    margin-bottom: 22px;
+  }
+
+  .home-project-technologies span {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  .home-project-actions {
+    align-items: flex-start;
+    gap: 16px;
+    padding-top: 18px;
+  }
+
+  .home-projects-more {
+    margin-top: 35px;
+  }
+}

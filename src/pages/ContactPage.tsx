@@ -1,9 +1,5 @@
-function ContactPage() {
-  return (
-    <main className="page-container">
-      <h1>Contact</h1>
-    </main>
-  )
-}
+import ContactSection from "../components/sections/ContactSection";
 
-export default ContactPage
+export default function ContactPage() {
+  return <ContactSection />;
+}

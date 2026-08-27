@@ -1,8 +1,8 @@
-import { RouterProvider } from 'react-router'
-import { router } from './routes/routes.tsx'
+import { createBrowserRouter, RouterProvider } from "react-router";
+import routes from "./routes/routes";
 
-function App() {
-  return <RouterProvider router={router} />
+const router = createBrowserRouter(routes);
+
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App

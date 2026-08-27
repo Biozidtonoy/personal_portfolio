@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/</loc>
+    <loc>https://biozidbhuiyantonoy-portfolio.vercel.app/</loc>
   </url>
 
   <url>
-    <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/projects</loc>
+    <loc>https://biozidbhuiyantonoy-portfolio.vercel.app/projects</loc>
   </url>
 
   <url>
-    <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/projects/easytrip</loc>
+    <loc>https://biozidbhuiyantonoy-portfolio.vercel.app/projects/easytrip</loc>
   </url>
 
   <url>
-    <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/projects/quicknote</loc>
+    <loc>https://biozidbhuiyantonoy-portfolio.vercel.app/projects/quicknote</loc>
   </url>
 
   <url>
-    <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/projects/pokemon-memory</loc>
+    <loc>https://biozidbhuiyantonoy-portfolio.vercel.app/projects/pokemon-memory</loc>
   </url>
 
   <url>
-    <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/resume</loc>
+    <loc>https://biozidbhuiyantonoy-portfolio.vercel.app/resume</loc>
   </url>
 
   <url>
-    <loc>https://YOUR-VERCEL-DOMAIN.vercel.app/contact</loc>
+    <loc>https://biozidbhuiyantonoy-portfolio.vercel.app/contact</loc>
   </url>
 
 </urlset>

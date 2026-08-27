@@ -1,28 +1,59 @@
-import { createBrowserRouter } from 'react-router'
-import MainLayout from '../components/layout/MainLayout.tsx'
-import ContactPage from '../pages/ContactPage.tsx'
-import HomePage from '../pages/HomePage.tsx'
-import ProjectsPage from '../pages/ProjectsPage.tsx'
-import ResumePage from '../pages/ResumePage.tsx'
-import EasyTripPage from '../pages/projects/EasyTripPage.tsx'
-import QuickNotePage from '../pages/projects/QuickNotePage.tsx'
+import type { RouteObject } from "react-router";
 
-export const router = createBrowserRouter([
+import MainLayout from "../components/layout/MainLayout";
+
+import HomePage from "../pages/HomePage";
+import ProjectsPage from "../pages/ProjectsPage";
+import EasyTripPage from "../pages/EasyTripPage";
+import QuickNotePage from "../pages/QuickNotePage";
+// import ProjectDetailsPage from "../pages/ProjectDetailPage";
+import ResumePage from "../pages/ResumePage";
+import ContactPage from "../pages/ContactPage";
+import PokemonMemoryPage from "../pages/PokemonMemoryPage";
+
+const routes: RouteObject[] = [
   {
-    path: '/',
     element: <MainLayout />,
+
     children: [
-      { index: true, element: <HomePage /> },
       {
-        path: 'projects',
-        children: [
-          { index: true, element: <ProjectsPage /> },
-          { path: 'easytrip', element: <EasyTripPage /> },
-          { path: 'quicknote', element: <QuickNotePage /> },
-        ],
+        path: "/",
+        element: <HomePage />,
       },
-      { path: 'resume', element: <ResumePage /> },
-      { path: 'contact', element: <ContactPage /> },
+
+      {
+        path: "/projects",
+        element: <ProjectsPage />,
+      },
+
+      // Existing detailed pages
+      {
+        path: "/projects/easytrip",
+        element: <EasyTripPage />,
+      },
+
+      {
+        path: "/projects/quicknote",
+        element: <QuickNotePage />,
+      },
+
+      // Pokémon details
+      {
+        path: "/projects/pokemon-memory",
+        element: <PokemonMemoryPage />,
+      },
+
+      {
+        path: "/resume",
+        element: <ResumePage />,
+      },
+
+      {
+        path: "/contact",
+        element: <ContactPage />,
+      },
     ],
   },
-])
+];
+
+export default routes;

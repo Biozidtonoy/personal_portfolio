@@ -1,0 +1,143 @@
+/* =========================================
+   EDUCATION SECTION
+   ========================================= */
+
+.education-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+/* Education list */
+
+.education-list {
+  margin-top: 45px;
+}
+
+/* Education item */
+
+.education-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 45px;
+
+  padding: 35px 0;
+
+  border-top: 1px solid #e2e2e2;
+
+  transition:
+    transform 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.education-item:hover {
+  transform: translateX(6px);
+  padding-left: 6px;
+}
+
+/* Year */
+
+.education-year {
+  padding-top: 5px;
+
+  color: #999;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+}
+
+/* Content */
+
+.education-content {
+  max-width: 850px;
+}
+
+.education-label {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #777;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+}
+
+/* Degree */
+
+.education-content h3 {
+  margin: 0 0 12px;
+
+  color: #171717;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.2;
+
+  font-weight: 600;
+
+  letter-spacing: -0.035em;
+}
+
+/* University */
+
+.education-institution {
+  margin: 0 0 18px;
+
+  color: #333;
+
+  font-size: 17px;
+  font-weight: 600;
+}
+
+/* Description */
+
+.education-description {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #68717b;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 768px) {
+  .education-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 18px;
+
+    padding: 30px 0;
+  }
+
+  .education-item:hover {
+    transform: none;
+    padding-left: 0;
+  }
+
+  .education-year {
+    padding-top: 0;
+  }
+
+  .education-content h3 {
+    font-size: 28px;
+  }
+
+  .education-description {
+    font-size: 15px;
+  }
+}
